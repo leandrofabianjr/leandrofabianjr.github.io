@@ -1,0 +1,41 @@
+:root {
+  --dark: #373445;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1024px;
+  padding: 16px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.navbar .navbar-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar .navbar-menu-item {
+  padding-left: 16px;
+}
+
+.navbar a {
+  color: var(--dark);
+}
