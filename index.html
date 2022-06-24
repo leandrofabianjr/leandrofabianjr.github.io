@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dark">
 
 <head>
   <meta charset="UTF-8">
@@ -10,29 +10,33 @@
   <title>Leandro Fabian Jr.</title>
 </head>
 
-<body>
+<body class="main-bg">
   <header>
     <div class="container">
       <div class="navbar">
-        <a class="logo" href="/" title="Home">
-          leandrofabianjr
-        </a>
+        <div class="navbar-prepend">
+          <a href="/" title="Home">leandrofabianjr</a>
+        </div>
         <nav class="navbar-menu">
-          <a class="navbar-menu-item" href="#" title="Meus projetos">
+          <a class="navbar-menu-item btn-outline" href="#" title="Meus projetos">
             Projetos
           </a>
-          <a class="navbar-menu-item" href="#" title="Sobre mim">
+          <a class="navbar-menu-item btn-outline" href="#" title="Sobre mim">
             Sobre
           </a>
         </nav>
+        <button class="btn-icon rounded ml-4 p-0" type="button" onclick="document.querySelector('html').classList.toggle('theme-dark')">◑</button>
       </div>
     </div>
   </header>
   <main aria-role="main" class="container">
-    <h1>Leandro Fabian Jr.</h1>
+    <div class="card-alpha card-hello-world p-4">
+      $ <span class="ml-" id="helloWorldTyper"></span>
+    </div>
 
-    Em construção...
   </main>
+
+  <script src="./hello-world-typer.js"></script>
 </body>
 
 </html>
