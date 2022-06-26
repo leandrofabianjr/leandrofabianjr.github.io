@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --dark: rgb(55, 52, 69);
+  --dark-alpha: rgba(118, 115, 136, 0.3);
+  --light: white;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: radial-gradient(
+    at 100% 0%,
+    white 0%,
+    white 50%,
+    rgba(7, 100, 117, 0.61) 100%
+  );
+  color: var(--dark);
+}
+
+.theme-dark body {
+  background-image: radial-gradient(
+    at 100% 0%,
+    rgb(7, 100, 117) 0%,
+    rgb(0, 0, 0) 50%,
+    rgb(0, 0, 0) 100%
+  );
+  color: var(--light);
+}
+
+.text-light {
+  color: var(--light) !important;
+}
+
+.text-dark {
+  color: var(--dark) !important;
+}
+
+.theme-dark .text {
+  color: var(--light);
+}
+
+a {
+  color: var(--dark);
+}
+
+.theme-dark a {
+  color: var(--light);
+}
+
+.text-mono {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn-outline {
+  display: block;
+  border: 1px solid var(--dark);
+  background-color: transparent;
+  color: var(--dark);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--space-3);
+  text-align: center;
+  cursor: pointer;
+  border-radius: var(--space-1);
+  margin: var(--space-2);
+}
+
+.btn-link {
+  display: block;
+  background-color: transparent;
+  color: var(--dark);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--space-3);
+  text-align: center;
+  cursor: pointer;
+  border-radius: var(--space-1);
+  margin: var(--space-2);
+}
+
+.theme-dark .btn-outline {
+  border-color: var(--light);
+  color: var(--light);
+}
+
+.btn-icon {
+  border: 0;
+  background-color: transparent;
+  color: var(--dark);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--fs-2);
+  cursor: pointer;
+}
+
+.theme-dark .btn-icon {
+  color: var(--light);
+}
+
+.card {
+  border: 2px solid var(--dark-alpha);
+  border-radius: var(--space-2);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-alpha {
+  border: 0;
+  background-color: var(--dark-alpha);
+}
+
+.card-title {
+  font-size: var(--fs-2);
+  font-weight: 500;
+  margin-bottom: var(--space-2);
+}
+
+.card-body {
+  padding: var(--space-3);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: stretch;
+}
+
+.section {
+  margin-top: var(--space-5);
+}
+
+.section-title {
+  display: flex;
+  justify-content: end;
+  color: var(--light);
+  padding-bottom: var(--space-2);
+  position: relative;
+  font-size: var(--fs-2);
+  font-weight: 300;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, transparent 10%, white);
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: var(--fs-2);
+  font-weight: 500;
+}

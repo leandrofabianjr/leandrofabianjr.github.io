@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:link {
+  text-decoration: none;
+}
+*:visited {
+  text-decoration: none;
+}
+*:hover {
+  text-decoration: none;
+}
+*:active {
+  text-decoration: none;
+}
+
+html,
+html a {
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
