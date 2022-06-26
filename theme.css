@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css');
 
 :root {
   --dark: rgb(55, 52, 69);
@@ -100,12 +100,16 @@ a {
 }
 
 .card {
-  border: 2px solid var(--dark-alpha);
+  border: 1px solid var(--dark);
   border-radius: var(--space-2);
   display: flex;
   flex-direction: column;
   padding: var(--space-3);
   padding-bottom: 0;
+}
+
+.theme-dark .card {
+  border-color: var(--dark-alpha);
 }
 
 .card-alpha {
@@ -135,21 +139,29 @@ a {
 .section-title {
   display: flex;
   justify-content: end;
-  color: var(--light);
   padding-bottom: var(--space-2);
   position: relative;
   font-size: var(--fs-3);
   font-weight: 300;
+  color: var(--dark);
 }
 
 .section-title::after {
   content: '';
   position: absolute;
   top: 100%;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(to left, transparent 10%, white);
+  left: var(--space-3);
+  width: calc(100% - var(--space-3));
+  height: 1px;
+  background: linear-gradient(to left, transparent 10%, var(--dark));
+}
+
+.theme-dark .section-title {
+  color: var(--light);
+}
+
+.theme-dark .section-title::after {
+  background: linear-gradient(to left, transparent 10%, var(--light));
 }
 
 p {
