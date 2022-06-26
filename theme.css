@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
 :root {
   --dark: rgb(55, 52, 69);
@@ -65,7 +66,7 @@ a {
   text-align: center;
   cursor: pointer;
   border-radius: var(--space-1);
-  margin: var(--space-2);
+  margin: var(--space-2) 0;
 }
 
 .btn-link {
@@ -77,7 +78,7 @@ a {
   text-align: center;
   cursor: pointer;
   border-radius: var(--space-1);
-  margin: var(--space-2);
+  margin: var(--space-2) 0;
 }
 
 .theme-dark .btn-outline {
@@ -90,7 +91,7 @@ a {
   background-color: transparent;
   color: var(--dark);
   padding: var(--space-2) var(--space-3);
-  font-size: var(--fs-2);
+  font-size: var(--fs-3);
   cursor: pointer;
 }
 
@@ -103,6 +104,8 @@ a {
   border-radius: var(--space-2);
   display: flex;
   flex-direction: column;
+  padding: var(--space-3);
+  padding-bottom: 0;
 }
 
 .card-alpha {
@@ -111,13 +114,13 @@ a {
 }
 
 .card-title {
-  font-size: var(--fs-2);
+  font-size: var(--fs-3);
   font-weight: 500;
   margin-bottom: var(--space-2);
 }
 
 .card-body {
-  padding: var(--space-3);
+  padding-bottom: var(--space-3);
 }
 
 .card-footer {
@@ -135,7 +138,7 @@ a {
   color: var(--light);
   padding-bottom: var(--space-2);
   position: relative;
-  font-size: var(--fs-2);
+  font-size: var(--fs-3);
   font-weight: 300;
 }
 
@@ -154,6 +157,11 @@ p {
 }
 
 h1 {
-  font-size: var(--fs-2);
+  font-size: var(--fs-3);
   font-weight: 500;
+}
+
+h3 {
+  font-size: var(--fs-2);
+  font-weight: 300;
 }
