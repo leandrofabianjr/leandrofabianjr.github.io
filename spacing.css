@@ -104,6 +104,11 @@
   margin-right: var(--space-3) !important;
 }
 
+.mx-3 {
+  margin-right: var(--space-3) !important;
+  margin-left: var(--space-3) !important;
+}
+
 .p-0 {
   padding: 0 !important;
 }
